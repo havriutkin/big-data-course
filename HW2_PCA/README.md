@@ -41,6 +41,7 @@ The results of the custom PCA implementation were compared to the results obtain
 - **Singular Values**: The singular values obtained by both implementations were the same.
 
 #### Plot Custom PCA vs Sckit PCA
+As we can see on the plot below, spaces are inverse to each other (since eigenvectors are opposite)
 ![plot](pca_compare.png)
 
 ## Theoretical Considerations
