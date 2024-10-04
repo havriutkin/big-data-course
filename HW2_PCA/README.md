@@ -40,6 +40,9 @@ The results of the custom PCA implementation were compared to the results obtain
 - **Principal Component Vectors**: The principal components obtained by the custom implementation and scikit-learn were compared and found to be identical but inverse. It is probably caused by the fact, that scikit PCA first find covariance matrix, that have non-negative eigenvalues, since it is symmetrical and orthogonal. In my custom PCA, I just apply SVD to the data, which also effectively captures the variance. Despite the fact that eigenvectors are opposite, they still describe the same space. 
 - **Singular Values**: The singular values obtained by both implementations were the same.
 
+#### Plot Custom PCA vs Sckit PCA
+![plot](pca_compare.png)
+
 ## Theoretical Considerations
 PCA works by finding the directions (principal components) that maximize the variance in the data. These directions are orthogonal to each other, and each successive component explains a smaller amount of the total variance.
 
